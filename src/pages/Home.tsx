@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <div id="container">
-            <img src="https://www.vidyalankar.org/assets/img/logos/VersionThree.jpg" alt="" />
+            <img src="/assets/images/VIT-logo.png" alt="" />
             {/* <img src="/assets/vithelp.png" alt="" /> */}
           <p>Co-Volunteer IT Help</p>
         </div>

@@ -12,7 +12,7 @@ const SignIn: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <div id="container">
-            <img src="https://www.vidyalankar.org/assets/img/logos/VersionThree.jpg" alt="" />
+            <img src="/assets/images/VIT-logo.png" alt="" />
             <IonItem>
                 <IonLabel></IonLabel>
                 <IonInput type="number"></IonInput>
