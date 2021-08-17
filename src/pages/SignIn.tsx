@@ -6,8 +6,8 @@ const SignIn: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Sign In</IonTitle>
+        <IonToolbar color="danger">
+          <IonTitle></IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
