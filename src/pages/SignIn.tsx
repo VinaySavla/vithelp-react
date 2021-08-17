@@ -14,11 +14,20 @@ const SignIn: React.FC = () => {
         <div id="container">
             <img src="/assets/images/VIT-logo.png" alt="" />
             <IonItem>
-                <IonLabel></IonLabel>
-                <IonInput type="number"></IonInput>
+                <IonInput style={{maxWidth: "20%",borderRight: "1px solid grey"}} 
+                type="number"
+                placeholder=""
+                onClick={()=>{}}
+                >
+                </IonInput>
+                <IonInput style={{maxWidth: "50%"}} 
+                type="number"
+                placeholder="Your Mobile No."
+                onClick={()=>{}}
+                ></IonInput>
                 <IonIcon icon={call} slot="start"></IonIcon>
             </IonItem>
-            <p>By clicking "SEND OTP" you are agreeing to the <a href="/">Terms and Conditions</a>.</p>
+            <p>By clicking "SEND OTP" you are agreeing to the <a href="/signin">Terms and Conditions</a>.</p>
             <IonButton color="danger" expand="block">SEND OTP</IonButton>
         </div>
       </IonContent>
