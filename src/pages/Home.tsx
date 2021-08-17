@@ -1,22 +1,29 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter } from '@ionic/react';
 import './Home.css';
 
 const Home: React.FC = () => {
+  const router = useIonRouter();
+
+  const goToSignInPage = () => {
+    router.push("/signin");
+  }
+
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>Home</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
+        <div id="container">
+            <img src="https://www.vidyalankar.org/assets/img/logos/VersionThree.jpg" alt="" />
+            {/* <img src="/assets/vithelp.png" alt="" /> */}
+          <p>Co-Volunteer IT Help</p>
+        </div>
+        <div id="button">
+          <IonButton color="danger" expand="block" onClick={goToSignInPage} >SIGN IN</IonButton>
+        </div>
       </IonContent>
     </IonPage>
   );
