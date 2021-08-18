@@ -1,5 +1,4 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter } from '@ionic/react';
-import Slide from '../components/Slide';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -17,12 +16,11 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-       {/*  <div id="container">
+        <div id="container">
             <img src="/assets/images/VIT-logo.png" alt="" />
             <img src="/assets/vithelp.png" alt="" />
           <p>Co-Volunteer IT Help</p>
-        </div> */}
-        <Slide></Slide>
+        </div>
         <div id="button">
           <IonButton color="danger" expand="block" onClick={goToSignInPage} >SIGN IN</IonButton>
         </div>

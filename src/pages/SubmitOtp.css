@@ -20,5 +20,5 @@
     color: var(--ion-color-medium);
   }
   .otp-resend-btn-activate span{
-      color: var(--ion-color-primary);
+      color: var(--ion-color-danger);
   }
