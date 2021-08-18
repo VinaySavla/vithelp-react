@@ -1,0 +1,24 @@
+.otp-option {
+    border-bottom: 5px solid var(--ion-color-danger);
+    text-align: center;
+    padding: 16px;
+    width: 150px;
+    margin: 0 auto;
+  }
+  .otp-option ion-input {
+    font-size: 50px;
+    color: var(--ion-color-danger);
+  }
+  .otp-resend-btn {
+    text-align: center;
+    padding: 16px;
+    margin: 30px 0;
+  }
+ .otp-resend-btn span {
+    font-size: 24px;
+    font-weight: bolder;
+    color: var(--ion-color-medium);
+  }
+  .otp-resend-btn-activate span{
+      color: var(--ion-color-primary);
+  }

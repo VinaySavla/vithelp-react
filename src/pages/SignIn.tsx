@@ -1,8 +1,13 @@
-import { IonButton, IonContent, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonContent, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonTitle, IonToolbar, useIonRouter } from '@ionic/react';
 import { call } from "ionicons/icons";
 import './SignIn.css';
 
 const SignIn: React.FC = () => {
+  const router = useIonRouter();
+
+    const sendOtp = () => {
+        router.push("/submitotp");
+    }
   return (
     <IonPage>
       <IonHeader>
@@ -28,7 +33,7 @@ const SignIn: React.FC = () => {
                 <IonIcon icon={call} slot="start"></IonIcon>
             </IonItem>
             <p>By clicking "SEND OTP" you are agreeing to the <a href="/signin">Terms and Conditions</a>.</p>
-            <IonButton color="danger" expand="block">SEND OTP</IonButton>
+            <IonButton color="danger" expand="block" onClick={sendOtp}>SEND OTP</IonButton>
         </div>
       </IonContent>
     </IonPage>
