@@ -1,9 +1,10 @@
 ion-slide
 {
-    padding:140px 20px;
+    padding:120px 20px;
     display: block;
 }
 ion-slide h2{
     font-size: 36px;
     font-weight: bold;
 }
+

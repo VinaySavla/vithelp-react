@@ -5,9 +5,9 @@ import './SignIn.css';
 const SignIn: React.FC = () => {
   const router = useIonRouter();
 
-    const sendOtp = () => {
-        router.push("/submitotp");
-    }
+  const sendOtp = () => {
+    router.push("/submitotp");
+  }
   return (
     <IonPage>
       <IonHeader>
@@ -17,23 +17,23 @@ const SignIn: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <div id="container">
-            <img src="/assets/images/VIT-logo.png" alt="" />
-            <IonItem>
-                <IonInput style={{maxWidth: "20%",borderRight: "1px solid grey"}} 
-                type="number"
-                placeholder=""
-                onClick={()=>{}}
-                >
-                </IonInput>
-                <IonInput style={{maxWidth: "50%"}} 
-                type="number"
-                placeholder="Your Mobile No."
-                onClick={()=>{}}
-                ></IonInput>
-                <IonIcon icon={call} slot="start"></IonIcon>
-            </IonItem>
-            <p>By clicking "SEND OTP" you are agreeing to the <a href="/signin">Terms and Conditions</a>.</p>
-            <IonButton color="danger" expand="block" onClick={sendOtp}>SEND OTP</IonButton>
+          <img src="/assets/images/VIT-logo.png" alt="" />
+          <IonItem>
+            <IonInput style={{ maxWidth: "20%", borderRight: "1px solid grey" }}
+              type="number"
+              placeholder=""
+              onClick={() => { }}
+            >
+            </IonInput>
+            <IonInput style={{ maxWidth: "50%" }}
+              type="number"
+              placeholder="Your Mobile No."
+              onClick={() => { }}
+            ></IonInput>
+            <IonIcon icon={call} slot="start"></IonIcon>
+          </IonItem>
+          <p>By clicking "SEND OTP" you are agreeing to the <a href="/signin">Terms and Conditions</a>.</p>
+          <IonButton color="danger" expand="block" onClick={sendOtp}>SEND OTP</IonButton>
         </div>
       </IonContent>
     </IonPage>
