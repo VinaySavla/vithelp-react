@@ -32,7 +32,7 @@ const SignIn: React.FC = () => {
             ></IonInput>
             <IonIcon icon={call} slot="start"></IonIcon>
           </IonItem>
-          <p>By clicking "SEND OTP" you are agreeing to the <a href="/signin">Terms and Conditions</a>.</p>
+          <p>By clicking "SEND OTP" you are agreeing to the <a href="./terms">Terms and Conditions</a>.</p>
           <IonButton color="danger" expand="block" onClick={sendOtp}>SEND OTP</IonButton>
         </div>
       </IonContent>

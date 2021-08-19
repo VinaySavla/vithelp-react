@@ -4,6 +4,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import SignIn from './pages/SignIn';
 import SubmitOtp from './pages/SubmitOtp';
+import Terms from './pages/Terms'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -39,6 +40,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/submitotp">
           <SubmitOtp />
+        </Route>
+        <Route exact path="/terms">
+          <Terms />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
