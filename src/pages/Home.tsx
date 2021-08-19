@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter } from '@ionic/react';
 import Slide from '../components/Slide';
 import './Home.css';
 
@@ -24,9 +24,12 @@ const Home: React.FC = () => {
           <Slide></Slide>
         </div>
         <div id="button">
-          <IonButton color="danger" expand="block" onClick={goToSignInPage} >SIGN IN</IonButton>
         </div>
       </IonContent>
+      <IonFooter>
+          <IonButton color="danger" expand="full" onClick={goToSignInPage} >SIGN IN</IonButton>
+
+      </IonFooter>
     </IonPage>
   );
 };
