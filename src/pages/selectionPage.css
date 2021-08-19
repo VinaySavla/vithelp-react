@@ -1,0 +1,24 @@
+#container{
+    text-align: center;
+}
+
+#image{
+    size: 10%;
+}
+#volunter-button{
+    margin-left: 11%;
+    margin-bottom: 4%;
+    width: 78%;
+} 
+
+#distressed-button{
+    margin-left: 11%;
+    width: 78%;
+}
+
+#button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 20%;
+  }
