@@ -15,6 +15,7 @@ const Selection: React.FC = () => {
                 <div id="container">
                     <div>
                         <img id="image" src="/assets/images/VIT-logo.png" alt="" />
+                        <p></p>
 
                     </div>
 
