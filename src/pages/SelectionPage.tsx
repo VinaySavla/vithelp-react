@@ -20,7 +20,7 @@ const Selection: React.FC = () => {
                     </div>
 
 
-                    <IonButton color="danger" size="large" fill="outline" expand="block" id="volunter-button" strong>
+                    <IonButton color="danger" size="large" fill="outline" expand="block" id="volunteer-button" strong>
                         <IonIcon slot="start" icon={shield} />
                         Volunteer
                     </IonButton>

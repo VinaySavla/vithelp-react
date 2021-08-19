@@ -45,7 +45,7 @@ const App: React.FC = () => (
         <Route exact path="/terms">
           <Terms />
         </Route>
-        <Route exact path="/selectionPage">
+        <Route exact path="/selectionpage">
           <Selection />
         </Route>
         <Route exact path="/">

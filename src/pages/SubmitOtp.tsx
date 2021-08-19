@@ -5,7 +5,7 @@ const SubmitOtp: React.FC = () => {
     const router = useIonRouter();
 
     const SubmitOTP = () => {
-        router.push("/submitotp");
+        router.push("/selectionpage");
     }
 
     return (
