@@ -1,6 +1,6 @@
 import { IonButton, IonContent, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonTitle, IonToolbar,IonRippleEffect } from '@ionic/react';
 import { call, receipt, shield } from "ionicons/icons";
-import './selectionPage.css';
+import './SelectionPage.css';
 
 const Selection: React.FC = () => {
     return (
