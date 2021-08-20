@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   const goToSignInPage = () => {
     router.push("/signin");
   }
-  
+
 
   return (
     <IonPage>
@@ -28,7 +28,7 @@ const Home: React.FC = () => {
         </div>
       </IonContent>
       <IonFooter>
-          <IonButton color="danger" expand="full" onClick={goToSignInPage} >SIGN IN</IonButton>
+        <IonButton color="danger" expand="full" onClick={goToSignInPage} >SIGN IN</IonButton>
 
       </IonFooter>
     </IonPage>
