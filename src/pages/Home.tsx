@@ -9,7 +9,6 @@ const Home: React.FC = () => {
     router.push("/signin");
   }
 
-
   return (
     <IonPage>
       <IonHeader>
