@@ -8,6 +8,7 @@ const Home: React.FC = () => {
   const goToSignInPage = () => {
     router.push("/signin");
   }
+  
 
   return (
     <IonPage>
