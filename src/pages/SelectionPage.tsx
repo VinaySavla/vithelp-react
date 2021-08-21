@@ -1,4 +1,4 @@
-import { IonButton, IonContent, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonTitle, IonToolbar,IonRippleEffect } from '@ionic/react';
+import { IonButton, IonContent, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonTitle, IonToolbar,IonRippleEffect,IonFooter } from '@ionic/react';
 import { call, receipt, shield } from "ionicons/icons";
 import './SelectionPage.css';
 
@@ -30,9 +30,15 @@ const Selection: React.FC = () => {
                         <IonRippleEffect></IonRippleEffect> 
                     </IonButton>
 
-                    <div id="button">
+                    <IonFooter>
+
+                    {/* <div id="button"> */}
                         <IonButton color="dark" expand="block">SIGN IN</IonButton>
-                    </div>
+                    {/* </div>     */}
+                        
+                     </IonFooter>
+
+                    
                 </div>
             </IonContent>
 
