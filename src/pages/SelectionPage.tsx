@@ -1,8 +1,14 @@
-import { IonButton, IonContent, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonTitle, IonToolbar,IonRippleEffect,IonFooter } from '@ionic/react';
+import { IonButton, IonContent, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonTitle, IonToolbar,IonRippleEffect,IonFooter, useIonRouter } from '@ionic/react';
 import { call, receipt, shield } from "ionicons/icons";
 import './SelectionPage.css';
 
 const Selection: React.FC = () => {
+
+    const router = useIonRouter();
+
+  const profilePage = () => {
+    router.push("/setupprofilepage");
+  }
     return (
         <IonPage>
             <IonHeader>

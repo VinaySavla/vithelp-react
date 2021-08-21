@@ -1,0 +1,14 @@
+ion-buttons{
+    color: black;
+}
+ion-header {
+    padding: 0 16px;
+  }
+  
+  ion-title {
+    padding: 0;
+    text-transform: capitalize;
+  }
+  ion-radio{
+    --color-checked: var(--ion-color-danger);
+  }
