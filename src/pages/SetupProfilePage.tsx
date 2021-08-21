@@ -22,7 +22,7 @@ const SetupProfile: React.FC = () => {
                         />
                     </IonButtons>
 
-                    <IonButtons slot="end">Logged As: Volunteer{/* {{serviceRole}} */}</IonButtons>
+                    <IonButtons slot="end">Logged As: Distress{/* {{serviceRole}} */}</IonButtons>
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
