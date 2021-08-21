@@ -1,11 +1,11 @@
 ion-buttons{
     color: black;
 }
-ion-header {
+#selectP {
     padding: 0 16px;
   }
   
-  ion-title {
+  #selectP-Title {
     padding: 0;
     text-transform: capitalize;
   }

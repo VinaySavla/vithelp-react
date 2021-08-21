@@ -9,9 +9,9 @@ const SetupProfile: React.FC = () => {
 
     return (
         <IonPage>
-            <IonHeader>
+            <IonHeader id="selectP">
                 <IonToolbar color="#fff">
-                    <IonTitle>
+                    <IonTitle is="selectP-Title">
                     </IonTitle>
                     <IonButtons slot="start" >
                         <img
