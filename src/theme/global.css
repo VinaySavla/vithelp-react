@@ -7,9 +7,3 @@ ion-content {
     --padding-start: 16px;
     --padding-top: 16px;
 }
-@media only screen and (max-width: 768px) {
-    ion-modal {
-        padding: 200px 32px;
-        margin: 0 auto;
-   }
-}

@@ -2,6 +2,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIon
 import { call, locateOutline } from "ionicons/icons";
 import React, { useState } from 'react';
 import './SetupProfilePage.css';
+import { ServiceRole } from './SelectionPage';
 
 const SetupProfile: React.FC = () => {
     const router = useIonRouter();
@@ -22,7 +23,7 @@ const SetupProfile: React.FC = () => {
                         />
                     </IonButtons>
                     
-                    <IonButtons slot="end">Logged As: Distressed{/* {{serviceRole}} */}</IonButtons>
+                    <IonButtons slot="end">Logged As:{ServiceRole}</IonButtons>
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
