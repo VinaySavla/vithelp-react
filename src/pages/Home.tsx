@@ -17,7 +17,7 @@ const Home: React.FC = () => {
           <IonTitle></IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent>
         <div id="container">
           {/* <img src="/assets/images/VIT-logo.png" alt="" />
             <img src="/assets/vithelp.png" alt="" />
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
         <div id="button">
         </div>
       </IonContent>
-      <IonFooter>
+      <IonFooter color="danger">
         <IonButton color="danger" expand="full" onClick={goToSignInPage} >SIGN IN</IonButton>
 
       </IonFooter>
