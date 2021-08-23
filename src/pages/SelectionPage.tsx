@@ -2,7 +2,7 @@ import { IonButton, IonContent, IonHeader, IonIcon, IonPage, IonTitle, IonToolba
 import { call, receipt, shield } from "ionicons/icons";
 import './SelectionPage.css';
 
-export var ServiceRole="Volunteer";
+export var ServiceRole:String = "Volunteer";
 const Selection: React.FC = () => {
 
     const router = useIonRouter();
