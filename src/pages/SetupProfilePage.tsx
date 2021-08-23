@@ -22,7 +22,6 @@ const SetupProfile: React.FC = () => {
                         />
                     </IonButtons>
                     
-
                     <IonButtons slot="end">Logged As: Distressed{/* {{serviceRole}} */}</IonButtons>
                 </IonToolbar>
             </IonHeader>
