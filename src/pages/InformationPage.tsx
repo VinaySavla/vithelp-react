@@ -10,9 +10,9 @@ const InformationPage: React.FC = () => {
 
     return (
         <IonPage>
-            <IonHeader id="selectP">
-                <IonToolbar color="#fff">
-                    <IonTitle is="selectP-Title">
+            <IonHeader>
+                <IonToolbar id="selectP">
+                    <IonTitle>
                     </IonTitle>
                     <IonButtons slot="start" >
                         <img
@@ -27,12 +27,12 @@ const InformationPage: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
 
-            <IonToolbar className="buttons">
+            <IonContent className="buttons">
             <IonButton color="danger" expand="block" >FAQS</IonButton>
             <IonButton color="danger" expand="block" >TERMS & CONDITIONS</IonButton>
             <IonButton color="danger" expand="block" >CONTACT US</IonButton>
             <IonButton color="danger" expand="block" >ABOUT</IonButton>
-            </IonToolbar>
+            </IonContent>
             </IonPage>
     );
  

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonBackButton, IonButtons, IonInput, IonLabel, IonItem, IonIcon, IonToggle, IonList, IonRadioGroup, IonListHeader, IonRadio, IonItemDivider } from '@ionic/react';
+import { IonContent, IonInput, IonLabel, IonItem, IonIcon, IonToggle, IonList, IonRadioGroup, IonListHeader, IonRadio } from '@ionic/react';
 import { call, locateOutline } from "ionicons/icons";
 import './DistressedProfile.css';
 
 const DistressedProfile: React.FC = () => {
     const [selected, setSelected] = useState<string>('food');
-    return (<IonContent>
+    return (
         <div>
             <IonItem>
                 <IonLabel position="floating" color="black">Full Name</IonLabel>
@@ -50,8 +50,7 @@ const DistressedProfile: React.FC = () => {
                     </IonItem>
                 </IonRadioGroup>
             </IonList>
-        </div>
-    </IonContent>)
+        </div>)
   }
     
   export default DistressedProfile;

@@ -53,7 +53,7 @@ const App: React.FC = () => (
         <Route exact path="/setupprofilepage">
           <SetupProfilePage />
         </Route>
-        <Route exact path="/InformationPage">
+        <Route exact path="/informationpage">
           <InformationPage />
         </Route>
         <Route exact path="/">

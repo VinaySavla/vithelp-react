@@ -10,40 +10,40 @@ const SetupProfile: React.FC = () => {
     const [selected, setSelected] = useState<string>('food');
     var Role;
     const SelectProfile = () => {
-        if(ServiceRole=="Volunteer")
-        {
+        if (ServiceRole == "Volunteer") {
             <DistressedProfile></DistressedProfile>
+            console.log("Worked")
         }
-        else if(ServiceRole=="Distressed")
-        {
+        else if (ServiceRole == "Distressed") {
             <DistressedProfile></DistressedProfile>
+            console.log("Didnt work")
         }
     }
-    useIonViewDidEnter(()=>{SelectProfile()})
-      
-      return (
-          <IonPage>
+    useIonViewDidEnter(() => { SelectProfile() })
 
-        <IonHeader id="selectP" >
-        <IonToolbar color="#fff">
-            <IonTitle is="selectP-Title">
-            </IonTitle>
-            <IonButtons slot="start" >
-                <img
-                    src="assets/images/VITLogo.png"
-                    alt="VIT logo"
-                    title="VIT logo"
-                    width="150"
-                    />
-            </IonButtons>
-            
-            <IonButtons slot="end" >Logged As: {ServiceRole}</IonButtons>
-        </IonToolbar>
-    </IonHeader>
-    <IonContent></IonContent>
-    <IonFooter>
-        <IonButton color="danger" expand="full" >UPDATE</IonButton>
-    </IonFooter>
+    return (
+        <IonPage>
+
+            <IonHeader id="selectP" >
+                <IonToolbar>
+                    <IonTitle>
+                    </IonTitle>
+                    <IonButtons slot="start" >
+                        <img
+                            src="assets/images/VITLogo.png"
+                            alt="VIT logo"
+                            title="VIT logo"
+                            width="150"
+                        />
+                    </IonButtons>
+
+                    <IonButtons slot="end" >Logged As: {ServiceRole}</IonButtons>
+                </IonToolbar>
+            </IonHeader>
+            <IonContent></IonContent>
+            <IonFooter>
+                <IonButton color="danger" expand="full" >UPDATE</IonButton>
+            </IonFooter>
         </IonPage>
     );
 };
