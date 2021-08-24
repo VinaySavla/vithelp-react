@@ -8,6 +8,10 @@ import Terms from './pages/Terms'
 import Selection from './pages/SelectionPage';
 import SetupProfilePage from './pages/SetupProfilePage'
 import InformationPage from './pages/InformationPage'
+import AboutUs from './pages/Options/AboutUs';
+import FAQ from './pages/Options/Faq';
+import TNC from './pages/Options/TermsAndConditions';
+import ContactUs from './pages/Options/ContactUs';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -55,6 +59,18 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/informationpage">
           <InformationPage />
+        </Route>
+        <Route exact path="/aboutus">
+          <AboutUs />
+        </Route>
+        <Route exact path="/faq">
+          <FAQ />
+        </Route>
+        <Route exact path="/tnc">
+          <TNC />
+        </Route>
+        <Route exact path="/contactus">
+          <ContactUs />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />

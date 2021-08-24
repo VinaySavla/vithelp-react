@@ -8,8 +8,7 @@ import DistressedProfile from '../components/DistressedProfile';
 const SetupProfile: React.FC = () => {
     const router = useIonRouter();
     const [selected, setSelected] = useState<string>('food');
-    var Role;
-    const SelectProfile = () => {
+/*     const SelectProfile = () => {
         if (ServiceRole == "Volunteer") {
             <DistressedProfile></DistressedProfile>
             console.log("Worked")
@@ -19,7 +18,7 @@ const SetupProfile: React.FC = () => {
             console.log("Didn't work")
         }
     }
-    useIonViewDidEnter(() => { SelectProfile() })
+    useIonViewDidEnter(() => { SelectProfile() }) */
 
     return (
         <IonPage>

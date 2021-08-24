@@ -15,7 +15,7 @@ const Terms: React.FC = () => {
         </IonHeader>
 
         <IonContent>
-            
+
             <IonRow>
                 <div id="tc">
                     <h2>Self-Declaration: (for website and mobile both)</h2>

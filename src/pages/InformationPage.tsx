@@ -28,14 +28,14 @@ const InformationPage: React.FC = () => {
             </IonHeader>
 
             <IonContent className="buttons">
-            <IonButton color="danger" expand="block" >FAQS</IonButton>
-            <IonButton color="danger" expand="block" >TERMS & CONDITIONS</IonButton>
-            <IonButton color="danger" expand="block" >CONTACT US</IonButton>
-            <IonButton color="danger" expand="block" >ABOUT</IonButton>
+                <IonButton color="danger" expand="block" onClick={() => { router.push("/faq"); }} >FAQS</IonButton>
+                <IonButton color="danger" expand="block" onClick={() => { router.push("/tnc"); }}>TERMS & CONDITIONS</IonButton>
+                <IonButton color="danger" expand="block" onClick={() => { router.push("/contactus"); }}>CONTACT US</IonButton>
+                <IonButton color="danger" expand="block" onClick={() => { router.push("/aboutus"); }} >ABOUT</IonButton>
             </IonContent>
-            </IonPage>
+        </IonPage>
     );
- 
+
 };
 
- export default InformationPage;
+export default InformationPage;
