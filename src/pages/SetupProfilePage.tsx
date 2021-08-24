@@ -16,7 +16,7 @@ const SetupProfile: React.FC = () => {
         }
         else if (ServiceRole == "Distressed") {
             <DistressedProfile></DistressedProfile>
-            console.log("Didnt work")
+            console.log("Didn't work")
         }
     }
     useIonViewDidEnter(() => { SelectProfile() })
@@ -40,7 +40,9 @@ const SetupProfile: React.FC = () => {
                     <IonButtons slot="end" >Logged As: {ServiceRole}</IonButtons>
                 </IonToolbar>
             </IonHeader>
-            <IonContent></IonContent>
+            <IonContent>
+                <DistressedProfile></DistressedProfile>
+            </IonContent>
             <IonFooter>
                 <IonButton color="danger" expand="full" >UPDATE</IonButton>
             </IonFooter>
