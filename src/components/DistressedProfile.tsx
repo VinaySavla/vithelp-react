@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonBackButton, IonButtons, IonInput, IonLabel, IonItem, IonIcon, IonToggle, IonList, IonRadioGroup, IonListHeader, IonRadio, IonItemDivider } from '@ionic/react';
 import { call, locateOutline } from "ionicons/icons";
-import './VolunteerProfile.css';
+import './DistressedProfile.css';
 
-const VolunteerProfile: React.FC = () => {
+const DistressedProfile: React.FC = () => {
     const [selected, setSelected] = useState<string>('food');
     return (<IonContent>
         <div>
@@ -54,4 +54,4 @@ const VolunteerProfile: React.FC = () => {
     </IonContent>)
   }
     
-  export default VolunteerProfile;
+  export default DistressedProfile;
