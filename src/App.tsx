@@ -7,6 +7,7 @@ import SubmitOtp from './pages/SubmitOtp';
 import Terms from './pages/Terms'
 import Selection from './pages/SelectionPage';
 import SetupProfilePage from './pages/SetupProfilePage'
+import InformationPage from './pages/InformationPage'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -51,6 +52,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/setupprofilepage">
           <SetupProfilePage />
+        </Route>
+        <Route exact path="/InformationPage">
+          <InformationPage />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
