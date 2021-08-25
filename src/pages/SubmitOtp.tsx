@@ -1,5 +1,6 @@
-import { IonContent, IonHeader, IonInput, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter } from '@ionic/react';
+import { IonContent, IonHeader, IonInput, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonButtons, IonBackButton } from '@ionic/react';
 import './SubmitOtp.css';
+import {useForm, Controller} from "react-hook-form"
 
 const SubmitOtp: React.FC = () => {
     const router = useIonRouter();
@@ -10,9 +11,20 @@ const SubmitOtp: React.FC = () => {
 
     return (
         <IonPage>
-            <IonHeader>
-                <IonToolbar color="danger">
-                    <IonTitle></IonTitle>
+            <IonHeader id="selectP">
+                <IonToolbar>
+                    <IonTitle id="selectT">Enter OTP</IonTitle>
+                    <IonButtons slot="start">
+                        <IonBackButton defaultHref="/signin"></IonBackButton>
+                    </IonButtons>
+                    <IonButtons slot="end">
+                        <img
+                            src="assets/images/VIT-logo.png"
+                            alt="VIT logo"
+                            title="VIT logo"
+                            width="64"
+                        />
+                    </IonButtons>
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>

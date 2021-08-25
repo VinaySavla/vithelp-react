@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import './SetupProfilePage.css';
 import { ServiceRole } from './SelectionPage';
 import DistressedProfile from '../components/DistressedProfile';
+import VolunteerProfile from '../components/VolunteerProfile';
 
 const SetupProfile: React.FC = () => {
     const router = useIonRouter();
@@ -40,7 +41,8 @@ const SetupProfile: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent>
-                <DistressedProfile></DistressedProfile>
+                {/* <DistressedProfile></DistressedProfile> */}
+                <VolunteerProfile></VolunteerProfile>
             </IonContent>
             <IonFooter>
                 <IonButton color="danger" expand="full" >UPDATE</IonButton>
