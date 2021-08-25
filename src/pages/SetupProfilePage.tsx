@@ -9,17 +9,18 @@ import VolunteerProfile from '../components/VolunteerProfile';
 const SetupProfile: React.FC = () => {
     const router = useIonRouter();
     const [selected, setSelected] = useState<string>('food');
-/*     const SelectProfile = () => {
-        if (ServiceRole == "Volunteer") {
-            <DistressedProfile></DistressedProfile>
-            console.log("Worked")
+
+    /*     const SelectProfile = () => {
+            if (ServiceRole == "Volunteer") {
+                <VolunteerProfile></VolunteerProfile>
+                console.log("Worked")
+            }
+            else if (ServiceRole == "Distressed") {
+                <DistressedProfile></DistressedProfile>
+                console.log("Didn't work")
+            }
         }
-        else if (ServiceRole == "Distressed") {
-            <DistressedProfile></DistressedProfile>
-            console.log("Didn't work")
-        }
-    }
-    useIonViewDidEnter(() => { SelectProfile() }) */
+        useIonViewDidEnter(() => { SelectProfile() }) */
 
     return (
         <IonPage>
@@ -42,7 +43,17 @@ const SetupProfile: React.FC = () => {
             </IonHeader>
             <IonContent>
                 {/* <DistressedProfile></DistressedProfile> */}
-                <VolunteerProfile></VolunteerProfile>
+                {/* <VolunteerProfile></VolunteerProfile> */}
+                {(() => {
+                    if (ServiceRole == "Volunteer") {
+                        return <VolunteerProfile></VolunteerProfile>;
+                    } else {
+                        return <DistressedProfile></DistressedProfile>;
+                    }
+                })()}
+                {
+                    (() => {})()
+                }
             </IonContent>
             <IonFooter>
                 <IonButton color="danger" expand="full" >UPDATE</IonButton>

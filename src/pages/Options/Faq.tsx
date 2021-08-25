@@ -1,13 +1,26 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonBackButton, IonButtons, IonItem, IonImg, IonLabel } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonBackButton, IonButtons, IonItem, IonImg, IonLabel, useIonViewDidEnter } from '@ionic/react';
 import React, { useEffect, useState } from "react";
 import './Faq.css';
 
 const FAQ: React.FC = () => {
     const router = useIonRouter();
 
-    const goToSignInPage = () => {
-        router.push("/signin");
-    }
+    useIonViewDidEnter(() => {
+        var acc = document.getElementsByClassName("accordion");
+        var faqs = document.getElementById("faqs")!;
+
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                faqs.classList.toggle("active");
+                var panel = faqs.nextElementSibling! as HTMLElement;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = "0px";
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    })
 
     return (
         <IonPage>
@@ -28,7 +41,7 @@ const FAQ: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen className="ion-padding">
-                <div>
+                <div id="faqs">
 
                     <button className="accordion">What do we mean by distress?</button>
                     <div className="panel">

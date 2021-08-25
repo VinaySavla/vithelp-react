@@ -12,6 +12,7 @@ import AboutUs from './pages/Options/AboutUs';
 import FAQ from './pages/Options/Faq';
 import TNC from './pages/Options/TermsAndConditions';
 import ContactUs from './pages/Options/ContactUs';
+import Main from './pages/Main';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -72,12 +73,15 @@ const App: React.FC = () => (
         <Route exact path="/contactus">
           <ContactUs />
         </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
+        <Route exact path="/main">
+        <Main />
         </Route>
+      <Route exact path="/">
+        <Redirect to="/home" />
+      </Route>
       </IonRouterOutlet>
     </IonReactRouter>
-  </IonApp>
+  </IonApp >
 );
 
 export default App;

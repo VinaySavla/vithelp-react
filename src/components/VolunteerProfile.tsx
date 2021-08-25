@@ -5,6 +5,7 @@ import './VolunteerProfile.css';
 
 const VolunteerProfile: React.FC = () => {
     const [selected, setSelected] = useState<string>('All');
+    const [isSelectedAll, setIsSelectedAll] = useState<boolean | undefined>(undefined);
     return (
         <div>
             <IonItem>
@@ -31,26 +32,26 @@ const VolunteerProfile: React.FC = () => {
 
                     <IonItem>
                         <IonLabel>Select All</IonLabel>
-                        <IonCheckbox slot="start" value="All"  />
+                        <IonCheckbox onIonChange={(e)=>{setIsSelectedAll(e.detail.checked ? true : undefined)}} slot="start" value="All"  />
                     </IonItem>
 
                     <IonItem>
                         <IonLabel>Food</IonLabel>
-                        <IonCheckbox slot="start" value="food"  />
+                        <IonCheckbox checked={isSelectedAll} slot="start" value="food"  />
                     </IonItem>
 
                     <IonItem>
                         <IonLabel>Clothing</IonLabel>
-                        <IonCheckbox slot="start" value="clothing" />
+                        <IonCheckbox checked={isSelectedAll} slot="start" value="clothing" />
                     </IonItem>
 
                     <IonItem>
                         <IonLabel>Shelter</IonLabel>
-                        <IonCheckbox slot="start" value="shelter" />
+                        <IonCheckbox checked={isSelectedAll} slot="start" value="shelter" />
                     </IonItem>
                     <IonItem>
                         <IonLabel>Medical</IonLabel>
-                        <IonCheckbox slot="start" value="medical" />
+                        <IonCheckbox checked={isSelectedAll} slot="start" value="medical" />
                     </IonItem>
             </IonList>
         </div>)
