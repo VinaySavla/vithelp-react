@@ -4,7 +4,7 @@ import { call, locateOutline } from "ionicons/icons";
 import './VolunteerProfile.css';
 
 const VolunteerProfile: React.FC = () => {
-    const [selected, setSelected] = useState<string>('food');
+    const [selected, setSelected] = useState<string>('All');
     return (
         <div>
             <IonItem>
