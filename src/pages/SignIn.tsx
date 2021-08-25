@@ -4,15 +4,20 @@ import './SignIn.css';
 import { useForm } from 'react-hook-form';
 
 
+interface OTPFormData {
+  countryCode: number;
+  phone: number;
+}
+
 const SignIn: React.FC = () => {
   const router = useIonRouter();
 
-  const sendOtp = () => {
+  const sendOtp = (data: OTPFormData) => {
+    console.log(data);
     router.push("/submitotp");
   }
 
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = (data: any) => console.log(data);
   console.log(errors);
   
   return (
@@ -23,7 +28,7 @@ const SignIn: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={handleSubmit(sendOtp)}>
         <div id="container">
           <img src="/assets/images/VIT-logo.png" alt="" />
             <IonItem>
@@ -31,23 +36,20 @@ const SignIn: React.FC = () => {
               type="number"
               placeholder=""
               value="091"
-              required
-              {...register("countryCode", {maxLength: 3, pattern: /^[0-9]{1,4}$/i})}
-              onClick={() => { }}
+              {...register("countryCode", {required: true, maxLength: 3, pattern: /^[0-9]{1,4}$/i})}
             >
             </IonInput>
             <IonInput style={{ maxWidth: "50%" }}
               type="number"
               placeholder="Your Mobile No."
-              required
-              {...register("phone", {maxLength: 15, pattern: /^[0-9]{9,15}$/i})}
-              onClick={() => { }}
+              {...register("phone", {required: true, maxLength: 15, pattern: /^[0-9]{9,15}$/i})}
             ></IonInput>
             <IonIcon icon={call} slot="start"></IonIcon>
           </IonItem>
           <p>By clicking "SEND OTP" you are agreeing to the <a href="./terms">Terms and Conditions</a>.</p>
-          <IonButton type="submit" color="danger" expand="block" onClick={sendOtp}>SEND OTP</IonButton>
+          <IonButton type="submit" color="danger" expand="block" >SEND OTP</IonButton>
         </div>
+
           </form>
       </IonContent>
     </IonPage>
