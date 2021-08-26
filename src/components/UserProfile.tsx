@@ -48,22 +48,11 @@ const UserProfile: React.FC = () => {
                 <IonIcon icon={locateOutline}></IonIcon>
                 <IonInput placeholder="Address" type="text" readonly></IonInput>
             </IonItem>
-
-            {(() => {
-                if (!ServiceRole) {
-                    return <div>
-                        <IonItem >
-                            <IonLabel>Available for service?</IonLabel>
-                            <IonToggle></IonToggle>
+            <IonItem >
+                            <IonLabel color="black">Available for service?</IonLabel>
+                            <IonToggle slot="end" color="danger" checked />
                         </IonItem>
-                    </div>;
-                } else {
-                    return;
-                }
-            })()}
-            {
-                (() => { })()
-            }
+
         </IonList>
 
         {(() => {
