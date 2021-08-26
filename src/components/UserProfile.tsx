@@ -10,9 +10,9 @@ const UserProfile: React.FC = () => {
 
     const router = useIonRouter();
 
-  const saveUserInfo = () => {
-    router.push("/main");
-  }
+    const saveUserInfo = () => {
+        router.push("/main");
+    }
     return (<form >
         <IonList lines="full" className="ion-no-margin ion-no-padding">
             <IonItem>
@@ -49,9 +49,9 @@ const UserProfile: React.FC = () => {
                 <IonInput placeholder="Address" type="text" readonly></IonInput>
             </IonItem>
             <IonItem >
-                            <IonLabel color="black">Available for service?</IonLabel>
-                            <IonToggle slot="end" color="danger" checked />
-                        </IonItem>
+                <IonLabel color="black">Available for service?</IonLabel>
+                <IonToggle slot="end" color="danger" checked />
+            </IonItem>
 
         </IonList>
 

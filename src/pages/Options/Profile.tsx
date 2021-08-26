@@ -24,7 +24,9 @@ const Profile: React.FC = () => {
                     <IonButtons slot="end">Logged As:{ServiceRole}</IonButtons>
                 </IonToolbar>
             </IonHeader>
-            <UserProfile />
+            <IonContent>
+                <UserProfile />
+            </IonContent>
             <CommonTabBar />
         </IonPage>
     );

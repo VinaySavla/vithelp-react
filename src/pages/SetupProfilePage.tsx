@@ -25,7 +25,9 @@ const SetupProfile: React.FC = () => {
                     <IonButtons slot="end" >Logged As: {ServiceRole}</IonButtons>
                 </IonToolbar>
             </IonHeader>
-            <UserProfile></UserProfile>
+            <IonContent>
+                <UserProfile></UserProfile>
+            </IonContent>
         </IonPage>
     );
 };
