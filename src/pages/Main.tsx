@@ -1,14 +1,14 @@
 import React from 'react';
-import { IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonBadge, IonPage, IonHeader, IonToolbar, IonTitle, IonButtons, useIonRouter, IonRouterOutlet } from '@ionic/react';
-import { calendar, personCircle, map, informationCircle, notifications, information, personCircleOutline, notificationsOutline, informationOutline } from 'ionicons/icons';
-import { IonReactRouter } from '@ionic/react-router';
+import { IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonRouterOutlet } from '@ionic/react';
+import { map, notifications, information, personCircleOutline, } from 'ionicons/icons';
 import { Route, Redirect } from 'react-router-dom';
 import InformationPage from './InformationPage';
-import SetupProfile from './SetupProfilePage';
 import AboutUs from './Options/AboutUs';
 import ContactUs from './Options/ContactUs';
 import FAQ from './Options/Faq';
 import TNC from './Options/TermsAndConditions';
+import Map from './Options/Map';
+import Profile from './Options/Profile';
 
 const Main: React.FC = () => {
 
@@ -30,15 +30,22 @@ const Main: React.FC = () => {
                 <Route exact path="/contactus">
                     <ContactUs />
                 </Route>
+                <Route exact path="/map">
+                    <Map />
+                </Route>
+                <Route exact path="/profile">
+                    <Profile />
+                </Route>
+
             </IonRouterOutlet>
             <IonTabBar slot="bottom">
 
-                <IonTabButton tab="map">
+                <IonTabButton tab="map" href="map">
                     <IonIcon icon={map} />
                     <IonLabel>Map</IonLabel>
                 </IonTabButton>
 
-                <IonTabButton tab="notification">
+                <IonTabButton tab="notification" href="notifications">
                     <IonIcon icon={notifications} />
                     <IonLabel>Notification</IonLabel>
                 </IonTabButton>
@@ -49,7 +56,7 @@ const Main: React.FC = () => {
                 </IonTabButton>
 
 
-                <IonTabButton tab="profile">
+                <IonTabButton tab="profile" href="profile">
                     <IonIcon icon={personCircleOutline} />
                     <IonLabel>Profile</IonLabel>
                 </IonTabButton>

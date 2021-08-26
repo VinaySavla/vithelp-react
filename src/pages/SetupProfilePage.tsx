@@ -1,27 +1,11 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonBackButton, IonButtons, IonInput, IonLabel, IonItem, IonIcon, IonToggle, IonList, IonRadioGroup, IonListHeader, IonRadio, IonItemDivider, useIonViewDidEnter, useIonViewWillEnter } from '@ionic/react';
-import { call, locateOutline } from "ionicons/icons";
-import React, { useState } from 'react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonButtons } from '@ionic/react';
+import React from 'react';
 import './SetupProfilePage.css';
 import { ServiceRole } from './SelectionPage';
-import DistressedProfile from '../components/DistressedProfile';
-import VolunteerProfile from '../components/VolunteerProfile';
+import UserProfile from '../components/UserProfile';
 
 const SetupProfile: React.FC = () => {
     const router = useIonRouter();
-    const [selected, setSelected] = useState<string>('food');
-
-    /*     const SelectProfile = () => {
-            if (ServiceRole == "Volunteer") {
-                <VolunteerProfile></VolunteerProfile>
-                console.log("Worked")
-            }
-            else if (ServiceRole == "Distressed") {
-                <DistressedProfile></DistressedProfile>
-                console.log("Didn't work")
-            }
-        }
-        useIonViewDidEnter(() => { SelectProfile() }) */
-
     return (
         <IonPage>
 
@@ -41,23 +25,7 @@ const SetupProfile: React.FC = () => {
                     <IonButtons slot="end" >Logged As: {ServiceRole}</IonButtons>
                 </IonToolbar>
             </IonHeader>
-            <IonContent>
-                {/* <DistressedProfile></DistressedProfile> */}
-                {/* <VolunteerProfile></VolunteerProfile> */}
-                {(() => {
-                    if (ServiceRole == "Volunteer") {
-                        return <VolunteerProfile></VolunteerProfile>;
-                    } else {
-                        return <DistressedProfile></DistressedProfile>;
-                    }
-                })()}
-                {
-                    (() => {})()
-                }
-            </IonContent>
-            <IonFooter>
-                <IonButton color="danger" expand="full" >UPDATE</IonButton>
-            </IonFooter>
+            <UserProfile></UserProfile>
         </IonPage>
     );
 };

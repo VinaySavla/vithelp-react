@@ -1,5 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonBackButton, IonButtons, IonGrid, IonRow, IonCol, IonIcon } from '@ionic/react';
 import { globeOutline, callOutline, mailOutline } from "ionicons/icons";
+import CommonTabBar from '../../components/CommonTabBar';
 import './ContactUs.css';
 
 const ContactUs: React.FC = () => {
@@ -58,6 +59,7 @@ const ContactUs: React.FC = () => {
                 </IonGrid>
 
             </IonContent>
+            <CommonTabBar />
         </IonPage>
     );
 };

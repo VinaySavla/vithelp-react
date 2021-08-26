@@ -1,4 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonBackButton, IonButtons } from '@ionic/react';
+import CommonTabBar from '../../components/CommonTabBar';
 import './AboutUs.css';
 
 const AboutUs: React.FC = () => {
@@ -36,6 +37,7 @@ const AboutUs: React.FC = () => {
 
                 </div>
             </IonContent>
+            <CommonTabBar />
         </IonPage>
     );
 };

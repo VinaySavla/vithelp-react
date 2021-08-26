@@ -1,4 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonBackButton, IonButtons, IonRow } from '@ionic/react';
+import CommonTabBar from '../../components/CommonTabBar';
 import './TermsAndConditions.css';
 
 const TNC: React.FC = () => {
@@ -94,6 +95,7 @@ const TNC: React.FC = () => {
                 </IonRow>
 
             </IonContent>
+            <CommonTabBar />
         </IonPage>
     );
 };

@@ -1,5 +1,7 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonBackButton, IonButtons, IonItem, IonImg, IonLabel, useIonViewDidEnter } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonBackButton, IonButtons, IonItem, IonImg, IonLabel, useIonViewDidEnter, IonIcon, IonTabBar, IonTabButton } from '@ionic/react';
+import { map, notifications, information, personCircleOutline } from 'ionicons/icons';
 import React, { useEffect, useState } from "react";
+import CommonTabBar from '../../components/CommonTabBar';
 import './Faq.css';
 
 const FAQ: React.FC = () => {
@@ -164,6 +166,7 @@ const FAQ: React.FC = () => {
                     </div>
                 </div>
             </IonContent>
+            <CommonTabBar />
 
         </IonPage>
     );

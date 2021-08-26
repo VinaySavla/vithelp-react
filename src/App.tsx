@@ -13,6 +13,8 @@ import FAQ from './pages/Options/Faq';
 import TNC from './pages/Options/TermsAndConditions';
 import ContactUs from './pages/Options/ContactUs';
 import Main from './pages/Main';
+import Map from './pages/Options/Map';
+import Notifications from './pages/Options/Notifications';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -35,6 +37,7 @@ import './theme/variables.css';
 
 /* Global Theme */
 import './theme/global.css';
+import Profile from './pages/Options/Profile';
 
 const App: React.FC = () => (
   <IonApp>
@@ -74,11 +77,20 @@ const App: React.FC = () => (
           <ContactUs />
         </Route>
         <Route exact path="/main">
-        <Main />
+          <Main />
         </Route>
-      <Route exact path="/">
-        <Redirect to="/home" />
-      </Route>
+        <Route exact path="/map">
+          <Map />
+        </Route>
+        <Route exact path="/notifications">
+          <Notifications />
+        </Route>
+        <Route exact path="/profile">
+          <Profile />
+        </Route>
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp >

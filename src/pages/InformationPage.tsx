@@ -1,7 +1,9 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonBackButton, IonButtons, IonInput, IonLabel, IonItem, IonIcon, IonToggle, IonList, IonRadioGroup, IonListHeader, IonRadio, IonItemDivider } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonBackButton, IonButtons, IonInput, IonLabel, IonItem, IonIcon, IonToggle, IonList, IonRadioGroup, IonListHeader, IonRadio, IonItemDivider, IonTabBar, IonTabButton } from '@ionic/react';
 import React, { useState } from 'react';
 import { ServiceRole } from './SelectionPage';
 import './InformationPage.css';
+import { map, notifications, information, personCircleOutline } from 'ionicons/icons';
+import CommonTabBar from '../components/CommonTabBar';
 
 const InformationPage: React.FC = () => {
 
@@ -33,6 +35,7 @@ const InformationPage: React.FC = () => {
                 <IonButton color="danger" expand="block" onClick={() => { router.push("/contactus"); }}>CONTACT US</IonButton>
                 <IonButton color="danger" expand="block" onClick={() => { router.push("/aboutus"); }} >ABOUT</IonButton>
             </IonContent>
+            <CommonTabBar />
         </IonPage>
     );
 
