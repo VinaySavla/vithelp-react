@@ -1,4 +1,4 @@
-import { IonList, IonItem, IonLabel, IonText, IonInput, IonIcon, IonToolbar, IonTitle, IonRadioGroup, IonCheckbox, IonButton, IonToggle, IonListHeader, IonRadio } from '@ionic/react';
+import { IonList, IonItem, IonLabel, IonText, IonInput, IonIcon, IonToolbar, IonTitle, IonRadioGroup, IonCheckbox, IonButton, IonToggle, IonListHeader, IonRadio, useIonRouter } from '@ionic/react';
 import { call, locateOutline, radio, text } from 'ionicons/icons';
 import React, { useState } from 'react';
 import { ServiceRole } from '../pages/SelectionPage';
@@ -7,6 +7,12 @@ import './UserProfile.css';
 const UserProfile: React.FC = () => {
     const [selected, setSelected] = useState<string>('All');
     const [isSelectedAll, setIsSelectedAll] = useState<boolean | undefined>(undefined);
+
+    const router = useIonRouter();
+
+  const saveUserInfo = () => {
+    router.push("/main");
+  }
     return (<form >
         <IonList lines="full" className="ion-no-margin ion-no-padding">
             <IonItem>
@@ -129,11 +135,10 @@ const UserProfile: React.FC = () => {
         }
 
         <div className="ion-padding">
-            <IonButton color="danger" expand="block" onClick={() => {/* saveUserInfo() */ }}>Update</IonButton>
+            <IonButton color="danger" expand="block" onClick={saveUserInfo}>Update</IonButton>
         </div>
     </form>
     )
 }
 
 export default UserProfile;
-
