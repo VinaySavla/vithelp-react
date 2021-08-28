@@ -11,7 +11,7 @@ const UserProfile: React.FC = () => {
     const router = useIonRouter();
 
     const saveUserInfo = () => {
-        router.push("/main");
+        router.push("/map");
     }
     return (<form >
         <IonList lines="full" className="ion-no-margin ion-no-padding">
@@ -23,7 +23,7 @@ const UserProfile: React.FC = () => {
 
             <IonItem disabled>
                 <IonIcon icon={call}></IonIcon>
-                <IonInput required type="number"></IonInput>
+                <IonInput required value="091" type="number"></IonInput>
                 <IonInput required type="number" ></IonInput>
             </IonItem>
 

@@ -1,6 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonBackButton, IonButtons, IonItem, IonImg, IonLabel, useIonViewDidEnter, IonIcon, IonTabBar, IonTabButton } from '@ionic/react';
 import { map, notifications, information, personCircleOutline } from 'ionicons/icons';
 import React, { useEffect, useState } from "react";
+import CommonHeader from '../../components/CommonHeader';
 import CommonTabBar from '../../components/CommonTabBar';
 import '../../components/styles/Faq.css';
 
@@ -9,14 +10,13 @@ const FAQ: React.FC = () => {
 
     useIonViewDidEnter(() => {
         var acc = document.getElementsByClassName("accordion");
-        var faqs = document.getElementById("faqs")!;
 
         for (var i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                faqs.classList.toggle("active");
-                var panel = faqs.nextElementSibling! as HTMLElement;
+            acc[i].addEventListener("click", function (this: HTMLButtonElement) {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling! as HTMLElement;
                 if (panel.style.maxHeight) {
-                    panel.style.maxHeight = "0px";
+                    panel.style.removeProperty("max-height");
                 } else {
                     panel.style.maxHeight = panel.scrollHeight + "px";
                 }
@@ -26,24 +26,9 @@ const FAQ: React.FC = () => {
 
     return (
         <IonPage>
-            <IonHeader id="selectP">
-                <IonToolbar>
-                    <IonTitle id="selectT">FAQs- General</IonTitle>
-                    <IonButtons slot="start">
-                        <IonBackButton defaultHref="/informationpage"></IonBackButton>
-                    </IonButtons>
-                    <IonButtons slot="end">
-                        <img
-                            src="assets/images/VIT-logo.png"
-                            alt="VIT logo"
-                            title="VIT logo"
-                            width="64"
-                        />
-                    </IonButtons>
-                </IonToolbar>
-            </IonHeader>
+            <CommonHeader title="FAQs- General" isBackButtonActive={true} isSmallLogoActivate={true}></CommonHeader>
             <IonContent fullscreen className="ion-padding">
-                <div id="faqs">
+                <div>
 
                     <button className="accordion">What do we mean by distress?</button>
                     <div className="panel">
