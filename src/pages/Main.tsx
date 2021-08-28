@@ -40,23 +40,23 @@ const Main: React.FC = () => {
             </IonRouterOutlet>
             <IonTabBar slot="bottom">
 
-                <IonTabButton tab="map" href="map">
+                <IonTabButton tab="map" href="/map">
                     <IonIcon icon={map} />
                     <IonLabel>Map</IonLabel>
                 </IonTabButton>
 
-                <IonTabButton tab="notification" href="notifications">
+                <IonTabButton tab="notification" href="/notifications">
                     <IonIcon icon={notifications} />
                     <IonLabel>Notification</IonLabel>
                 </IonTabButton>
 
-                <IonTabButton tab="info" href="informationpage">
+                <IonTabButton tab="info" href="/informationpage">
                     <IonIcon icon={information} />
                     <IonLabel>Info</IonLabel>
                 </IonTabButton>
 
 
-                <IonTabButton tab="profile" href="profile">
+                <IonTabButton tab="profile" href="/profile">
                     <IonIcon icon={personCircleOutline} />
                     <IonLabel>Profile</IonLabel>
                 </IonTabButton>

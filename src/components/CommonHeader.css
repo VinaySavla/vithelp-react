@@ -1,0 +1,8 @@
+#selectP {
+    padding: 0 16px;
+}
+
+#selectT {
+    padding: 0;
+    text-transform: capitalize;
+  }

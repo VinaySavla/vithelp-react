@@ -1,5 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonBackButton, IonButtons, IonGrid, IonRow, IonCol, IonIcon } from '@ionic/react';
 import { globeOutline, callOutline, mailOutline } from "ionicons/icons";
+import CommonHeader from '../../components/CommonHeader';
 import CommonTabBar from '../../components/CommonTabBar';
 import '../../components/styles/ContactUs.css';
 
@@ -7,22 +8,7 @@ const ContactUs: React.FC = () => {
 
     return (
         <IonPage>
-            <IonHeader id="selectP">
-                <IonToolbar>
-                    <IonTitle id="selectT">Contact Us</IonTitle>
-                    <IonButtons slot="start">
-                        <IonBackButton defaultHref="/informationpage"></IonBackButton>
-                    </IonButtons>
-                    <IonButtons slot="end">
-                        <img
-                            src="assets/images/VIT-logo.png"
-                            alt="VIT logo"
-                            title="VIT logo"
-                            width="64"
-                        />
-                    </IonButtons>
-                </IonToolbar>
-            </IonHeader>
+            <CommonHeader title="Contact Us" isBackButtonActive={true} isSmallLogoActivate={true}></CommonHeader>
             <IonContent fullscreen className="ion-padding">
                 <div>
                     <p>If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us on <a href="mailto:oraneintellisolutions@gmail.com"> oraneintellisolutions@gmail.com</a></p>

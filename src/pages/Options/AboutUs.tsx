@@ -1,4 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonBackButton, IonButtons } from '@ionic/react';
+import CommonHeader from '../../components/CommonHeader';
 import CommonTabBar from '../../components/CommonTabBar';
 import '../../components/styles/AboutUs.css';
 
@@ -6,22 +7,7 @@ const AboutUs: React.FC = () => {
 
     return (
         <IonPage>
-            <IonHeader id="selectP">
-                <IonToolbar>
-                    <IonTitle id="selectT">About</IonTitle>
-                    <IonButtons slot="start">
-                        <IonBackButton defaultHref="/informationpage"></IonBackButton>
-                    </IonButtons>
-                    <IonButtons slot="end">
-                        <img
-                            src="assets/images/VIT-logo.png"
-                            alt="VIT logo"
-                            title="VIT logo"
-                            width="64"
-                        />
-                    </IonButtons>
-                </IonToolbar>
-            </IonHeader>
+            <CommonHeader title="About" isBackButtonActive={true} isSmallLogoActivate={true}></CommonHeader>
             <IonContent>
                 <div>
                     <h2>What is VIT?</h2>
