@@ -1,7 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonBackButton, IonButtons, IonGrid, IonRow, IonCol, IonIcon } from '@ionic/react';
 import { globeOutline, callOutline, mailOutline } from "ionicons/icons";
 import CommonTabBar from '../../components/CommonTabBar';
-import '../../components/styles/ContactUs.css';
+import './ContactUs.css';
 
 const ContactUs: React.FC = () => {
 

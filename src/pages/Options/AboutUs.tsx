@@ -1,6 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonBackButton, IonButtons } from '@ionic/react';
 import CommonTabBar from '../../components/CommonTabBar';
-import './AboutUs.css';
+import '../../components/styles/AboutUs.css';
 
 const AboutUs: React.FC = () => {
 

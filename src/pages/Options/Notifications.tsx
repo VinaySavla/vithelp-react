@@ -1,7 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonBackButton, IonButtons } from '@ionic/react';
 import CommonTabBar from '../../components/CommonTabBar';
 import { ServiceRole } from '../SelectionPage';
-import './Notifications.css';
+import '../../components/styles/Notifications.css';
 
 const Notifications: React.FC = () => {
 

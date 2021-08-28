@@ -1,7 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonBackButton, IonButtons, IonInput, IonLabel, IonItem, IonIcon, IonToggle, IonList, IonRadioGroup, IonListHeader, IonRadio, IonItemDivider, IonTabBar, IonTabButton } from '@ionic/react';
 import React, { useState } from 'react';
 import { ServiceRole } from './SelectionPage';
-import './InformationPage.css';
+import '../components/styles/InformationPage.css';
 import { map, notifications, information, personCircleOutline } from 'ionicons/icons';
 import CommonTabBar from '../components/CommonTabBar';
 

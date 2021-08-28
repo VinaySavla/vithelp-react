@@ -1,6 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonButtons } from '@ionic/react';
 import React from 'react';
-import './SetupProfilePage.css';
+import '../components/styles/SetupProfilePage.css';
 import { ServiceRole } from './SelectionPage';
 import UserProfile from '../components/UserProfile';
 

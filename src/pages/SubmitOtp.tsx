@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonInput, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter, IonButtons, IonBackButton } from '@ionic/react';
-import './SubmitOtp.css';
+import '../components/styles/SubmitOtp.css';
 import {useForm, Controller} from "react-hook-form"
 
 const SubmitOtp: React.FC = () => {

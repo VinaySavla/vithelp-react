@@ -1,6 +1,6 @@
 import React from 'react';
 import { IonSlides, IonSlide, IonContent } from '@ionic/react';
-import './Slide.css'
+import './styles/Slide.css'
 
 const slideOpts = {
   initialSlide: 1,

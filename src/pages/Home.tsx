@@ -1,6 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter } from '@ionic/react';
 import Slide from '../components/Slide';
-import './Home.css';
+import '../components/styles/Home.css';
 
 const Home: React.FC = () => {
   const router = useIonRouter();

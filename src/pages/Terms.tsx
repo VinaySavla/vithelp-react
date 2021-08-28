@@ -1,6 +1,6 @@
 import React from 'react';
 import { IonContent, IonHeader, IonToolbar, IonButton, IonBackButton, IonTitle, IonRow, IonPage } from '@ionic/react';
-import './Terms.css';
+import '../components/styles/Terms.css';
 
 const Terms: React.FC = () => {
     return <IonPage>

@@ -2,7 +2,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonBackButton, Io
 import CommonTabBar from '../../components/CommonTabBar';
 import UserProfile from '../../components/UserProfile';
 import { ServiceRole } from '../SelectionPage';
-import './Profile.css';
+import '../../components/styles/Profile.css';
 
 const Profile: React.FC = () => {
 

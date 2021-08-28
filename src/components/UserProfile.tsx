@@ -2,7 +2,7 @@ import { IonList, IonItem, IonLabel, IonText, IonInput, IonIcon, IonToolbar, Ion
 import { call, locateOutline, radio, text } from 'ionicons/icons';
 import React, { useState } from 'react';
 import { ServiceRole } from '../pages/SelectionPage';
-import './UserProfile.css';
+import './styles/UserProfile.css';
 
 const UserProfile: React.FC = () => {
     const [selected, setSelected] = useState<string>('All');

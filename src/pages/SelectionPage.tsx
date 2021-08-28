@@ -1,6 +1,6 @@
 import { IonButton, IonContent, IonHeader, IonIcon, IonPage, IonTitle, IonToolbar, IonRippleEffect, IonFooter, useIonRouter } from '@ionic/react';
 import { call, receipt, shield } from "ionicons/icons";
-import './SelectionPage.css';
+import '../components/styles/SelectionPage.css';
 
 export var ServiceRole: "Volunteer" | "Distressed" = "Distressed";
 const Selection: React.FC = () => {

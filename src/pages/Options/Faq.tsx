@@ -2,7 +2,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIon
 import { map, notifications, information, personCircleOutline } from 'ionicons/icons';
 import React, { useEffect, useState } from "react";
 import CommonTabBar from '../../components/CommonTabBar';
-import './Faq.css';
+import '../../components/styles/Faq.css';
 
 const FAQ: React.FC = () => {
     const router = useIonRouter();
