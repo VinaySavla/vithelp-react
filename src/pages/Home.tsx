@@ -1,7 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, useIonRouter, IonFooter } from '@ionic/react';
+import HomeContainer from '../components/script/HomeContainer';
 import Slide from '../components/Slide';
 import '../components/styles/Home.css';
-
 const Home: React.FC = () => {
   const router = useIonRouter();
 
@@ -18,19 +18,9 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <div id="container">
-          {/* <img src="/assets/images/VIT-logo.png" alt="" />
-            <img src="/assets/vithelp.png" alt="" />
-          <p>Co-Volunteer IT Help</p> */}
-          <Slide></Slide>
-        </div>
-        <div id="button">
-        </div>
+      <HomeContainer />
       </IonContent>
-      <IonFooter color="danger">
-        <IonButton color="danger" expand="full" onClick={goToSignInPage} >SIGN IN</IonButton>
 
-      </IonFooter>
     </IonPage>
   );
 };
